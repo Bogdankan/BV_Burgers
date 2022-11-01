@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB854989-4C1B-47EA-9FD9-C4D3B092ADFC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BV_Burgers</RootNamespace>
+    <AssemblyName>BV_Burgers</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountForm.Designer.cs">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="GoodIcon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodIcon.Designer.cs">
+      <DependentUpon>GoodIcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Goods.cs" />
+    <Compile Include="GoodsController.cs" />
+    <Compile Include="IOrder.cs" />
+    <Compile Include="NameChangedEventArgs.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderController.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="BurgersCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BurgersCategoryForm.Designer.cs">
+      <DependentUpon>BurgersCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChichenCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChichenCategoryForm.Designer.cs">
+      <DependentUpon>ChichenCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DessertsCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DessertsCategoryForm.Designer.cs">
+      <DependentUpon>DessertsCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrinksCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrinksCategoryForm.Designer.cs">
+      <DependentUpon>DrinksCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PotatoCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PotatoCategoryForm.Designer.cs">
+      <DependentUpon>PotatoCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registForm.Designer.cs">
+      <DependentUpon>registForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaladsCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaladsCategoryForm.Designer.cs">
+      <DependentUpon>SaladsCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetsCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetsCategoryForm.Designer.cs">
+      <DependentUpon>SetsCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SnacksCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnacksCategoryForm.Designer.cs">
+      <DependentUpon>SnacksCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontroller.cs" />
+    <Compile Include="VouchersCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VouchersCategoryForm.Designer.cs">
+      <DependentUpon>VouchersCategoryForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountForm.resx">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BurgersCategoryForm.resx">
+      <DependentUpon>BurgersCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChichenCategoryForm.resx">
+      <DependentUpon>ChichenCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DessertsCategoryForm.resx">
+      <DependentUpon>DessertsCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrinksCategoryForm.resx">
+      <DependentUpon>DrinksCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodIcon.resx">
+      <DependentUpon>GoodIcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PotatoCategoryForm.resx">
+      <DependentUpon>PotatoCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="registForm.resx">
+      <DependentUpon>registForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaladsCategoryForm.resx">
+      <DependentUpon>SaladsCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetsCategoryForm.resx">
+      <DependentUpon>SetsCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnacksCategoryForm.resx">
+      <DependentUpon>SnacksCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VouchersCategoryForm.resx">
+      <DependentUpon>VouchersCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
